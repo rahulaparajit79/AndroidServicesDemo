@@ -55,21 +55,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-////
-////        for (int i = 0; i < 15; i++) {
-////            try {
-////                Thread.sleep(2000);
-////            } catch (InterruptedException e) {
-////                e.printStackTrace();
-////                System.out.println(e.getMessage());
-////            }
-////            System.out.println(Thread.currentThread().getName() + "-" + i);
-////            if (i == 10) {
-////
-////                Thread.currentThread().interrupt();
-////            }
-//
-//        }
 
         btnStartService = (Button) findViewById(R.id.btn_startService);
         btnStopService = (Button) findViewById(R.id.btn_stopService);
@@ -110,9 +95,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });//endregion
 
-        //region
-
-        // endregion
 
         //region btn unbind service
         btnUnbindService.setOnClickListener(new View.OnClickListener() {

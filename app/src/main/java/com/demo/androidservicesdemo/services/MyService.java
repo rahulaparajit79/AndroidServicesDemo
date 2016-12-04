@@ -36,12 +36,6 @@ public class MyService extends Service {
         super.onCreate();
 
         System.out.println("MyService onCreate");
-//        for (int i=0;i<15;i++){
-//
-//            System.out.println(Thread.currentThread().getName()+"-"+i);
-//
-//
-//        }
     }
 
     @Nullable
